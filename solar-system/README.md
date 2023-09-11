@@ -1,4 +1,4 @@
-# Which Are the Poetry Of Heaven
+# Which Are the Poetry of Heaven
 A complex artwork of the 8 planets of the solar system. Below is a screenshot of the artwork.
 
 <p align="center">
