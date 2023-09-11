@@ -1,0 +1,190 @@
+body {
+	background-color: #ffdefb;
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flag {
+	width: 300px;
+	height: 200px;
+
+	position: relative;
+	top: 220px;
+	left: 150px;
+	z-index: 1;
+
+	animation: wave 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes wave {
+	0% {
+		top: calc(220px + 5px);
+		transform: rotateY(10deg);
+	}
+	100% {
+		top: calc(220px - 5px);
+		transform: rotateY(-10deg);
+	}
+}
+
+.pink {
+	width: inherit;
+	height: 80px;
+	background-color: #d60270;
+
+	position: relative;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.purple {
+	width: inherit;
+	height: 40px;
+	background-color: #9b4f96;
+
+	position: relative;
+}
+
+.blue {
+	width: inherit;
+	height: 80px;
+	background-color: #0038a8;
+
+	position: relative;
+
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+	border-bottom: 5px solid #edcae9;
+}
+
+.pole {
+	width: 20px;
+	height: 600px;
+	background-color: #ecaa7d;
+
+	position: relative;
+	z-index: 0;
+
+	border-radius: 5px;
+}
+
+.ground {
+	width: 2500px;
+	height: 30vh;
+	background-color: #9fc164;
+
+	position: relative;
+	bottom: 5px;
+
+	border-radius: 50%;
+}
+
+.bush {
+	width: 100px;
+	height: 100px;
+
+	position: absolute;
+	top: 700px;
+	left: 500px;
+}
+
+.wind {
+	position: absolute;
+	top: 50vh;
+}
+
+.wind-particle {
+	width: 200px;
+	height: 5px;
+	background-color: white;
+
+	position: relative;
+	margin: 10px;
+	z-index: 5;
+
+	border-radius: 20px;
+
+	animation: wind 12s ease-in-out infinite;
+
+}
+
+.offset {
+	margin-left: 25px;
+}
+
+@keyframes wind {
+
+	0% {
+		top: 25vh;
+		left: -110vh;
+	}
+	10% {
+		top: 25vh;
+		left: 110vh;
+	}
+	20% {
+		top: 25vh;
+		left: 110vh;
+	}
+
+	20.001% {
+		top: -19vh;
+		left: -110vh;
+	}
+	30% {
+		top: -19vh;
+		left: -110vh;
+	}
+	40% {
+		top: -19vh;
+		left: 110vh;
+	}
+	50% {
+		top: -19vh;
+		left: 110vh;
+	}
+
+	50.001% {
+		top: -28vh;
+		left: -110vh;
+	}
+	60% {
+		top: -28vh;
+		left: -110vh;
+	}
+	70% {
+		top: -28vh;
+		left: 110vh;
+	}
+	80% {
+		top: -28vh;
+		left: 110vh;
+	}
+
+	80.001% {
+		top: 3vh;
+		left: -110vh;
+	}
+	90% {
+		top: 3vh;
+		left: -110vh;
+	}
+	100% {
+		top: 3vh;
+		left: 110vh;
+	}
+}
