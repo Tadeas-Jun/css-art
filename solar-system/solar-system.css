@@ -1,0 +1,327 @@
+body {
+	background: #010B13;
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+
+.sun {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, rgba(255, 102, 46, 0.2) 0%, #010B13 20% 100%);
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.planets {
+	margin-bottom: 20px;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.planet {
+	border-right: 2px rgba(0, 0, 0, 0.5) solid;
+	border-radius: 50%;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+p {
+	color: #FFFFFF;
+	font-family: 'Courier New', Courier, monospace;
+	letter-spacing: 5px;
+	word-spacing: -5px;
+	text-shadow: 1px 8px 6px #FFFFFF;
+}
+
+.mercury {
+	width: 20px;
+	height: 20px;
+	background-color: #939393;
+}
+
+.mercury .crater {
+	display: block;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	opacity: 0.75;
+}
+
+#crater1 {
+	position: relative;
+	top: 11px;
+	left: 9px;
+	background: #D3C7C7;
+}
+
+#crater2 {
+	position: relative;
+	top: 13px;
+	left: 13px;
+	background: #C8C8C8;
+}
+
+#crater3 {
+	position: relative;
+	top: -4px;
+	left: 10px;
+	background: #C8C8C8;
+}
+
+.venus {
+	width: 50px;
+	height: 50px;
+	background-color: #ECDDC7;
+}
+
+.earth-container {
+	margin: auto;
+	height: 60px;
+}
+
+.earth {
+	width: 60px;
+	height: 60px;
+	background-color: #245285;
+	overflow: hidden;
+	position: relative;
+}
+
+.earth .pole {
+	width: 30px;
+	height: 15px;
+	background-color: #D0D1D5;
+	position: relative;
+	left: 10px;
+	top: -5px;
+	border-radius: 3px;
+	rotate: 10deg;
+}
+.earth .america {
+	width: 20px;
+	height: 30px;
+	background-color: #3B4C2A;
+	position: relative;
+	left: 16px;
+	border-radius: 5px;
+	rotate: -10deg;
+}
+.earth .clouds {
+	background-color: #FFFFFF;
+	position: relative;
+	opacity: 0.3;
+	border-radius: 10px;
+}
+.earth #cloud1 {
+	width: 35px;
+	height: 45px;
+	top: -60px;
+	rotate: -52deg;
+}
+.earth #cloud2 {
+	width: 40px;
+	height: 35px;
+	top: -70px;
+	left: 20px;
+	rotate: 14deg;
+}
+
+.moon {
+	width: 15px;
+	height: 15px;
+	background-color: #B0A5A1;
+	position: relative;
+	top: -80px;
+	left: 60px;
+	overflow: hidden;
+}
+
+.moon .sea {
+	background-color: #5E5B59;
+	position: relative;
+}
+.moon #sea1 {
+	width: 9px;
+	height: 8px;
+	left: 0px;
+	rotate: -5deg;
+	border-radius: 2px;
+}
+.moon #sea2 {
+	width: 4px;
+	height: 8px;
+	left: 6px;
+	top: -5px;
+	rotate: -25deg;
+	border-radius: 10px;
+}
+
+.moon .crater {
+	display: block;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	opacity: 0.75;
+}
+
+.moon #crater4 {
+	position: relative;
+	top: -5px;
+	left: 5px;
+	background: #FFFFFF;
+}
+
+
+.mars {
+	width: 30px;
+	height: 30px;
+	background-color: #E29E6D;
+	overflow: hidden;
+}
+
+.mars .band {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+.mars #band8{
+	height: 15%;
+	background-color: #C4B6AF;
+	rotate: -15deg;
+}
+.mars #band9 {
+	height: 55%;
+	background-color: #FF825B;
+}
+.mars #band10 {
+	height: 15%;
+	background-color: #7D5952;
+}
+.mars #band11 {
+	height: 15%;
+	background-color: #C4B6AF;
+	rotate: -5deg;
+}
+
+
+.jupiter {
+	margin-left: 40px;
+	width: 165px;
+	height: 165px;
+	overflow: hidden;
+	z-index: 3;
+}
+
+.jupiter .band {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+.jupiter #band1 {
+	height: 20%;
+	background-color: #7D6754;
+}
+.jupiter #band2 {
+	height: 15%;
+	background-color: #E7D0C2;
+}
+.jupiter #band3 {
+	height: 15%;
+	background-color: #E3B597;
+}
+.jupiter #band4 {
+	height: 20%;
+	background-color: #DD9A6D;
+}
+.jupiter #band5 {
+	height: 5%;
+	background-color: #A97F67;
+}
+.jupiter #band6 {
+	height: 10%;
+	background-color: #B79880;
+}
+.jupiter #band7 {
+	height: 15%;
+	background-color: #8E786A;
+}
+
+.jupiter .redspot {
+	border-top: 2px solid #FAF7DE;
+	background-color: #9A6B4F;
+	width: 23px;
+	height: 15px;
+	position: relative;
+	top: -25%;
+	left: 25%;
+	margin-left: -8px;
+	margin-top: -5px;
+	border-radius: 10px;
+	z-index: 2;
+}
+
+.saturn {
+	width: 150px;
+	height: 150px;
+	background: repeating-linear-gradient(40deg, rgba(176, 146, 105, 1) 0% 14%, rgba(165, 136, 96, 1) 14% 14.5%);
+}
+
+.saturn .ring {
+	width: 450px;
+	height: 50px;
+	border-radius: 50%;
+	transform: rotate3d(1, 1, 1, 70deg);
+	background: radial-gradient(circle,  rgba(0, 0, 0, 0) 40%, #726B56 50% 100%);
+	position: relative;
+	margin-left: -150px;
+	margin-top: 50px;
+}
+
+.uranus {
+	width: 60px;
+	height: 60px;
+	background-color: #DFF1FB;
+}
+
+.neptune {
+	width: 60px;
+	height: 60px;
+	background-color: #4467FD;
+}
+
+.neptune .darkspot {
+	background-color: #000000;
+	opacity: 0.2;
+	width: 20px;
+	height: 10px;
+	position: relative;
+	top: 70%;
+	left: 40%;
+	margin-left: -8px;
+	margin-top: -5px;
+	border-radius: 4px;
+	rotate: 5deg;
+}
+
+.neptune .cloud {
+	background-color: #FFFFFF;
+	opacity: 0.5;
+	width: 22px;
+	height: 3px;
+	position: relative;
+	top: 70%;
+	left: 30%;
+	rotate: -2deg;
+}
