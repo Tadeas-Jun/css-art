@@ -33,6 +33,7 @@ body {
 		top: calc(220px + 5px);
 		transform: rotateY(10deg);
 	}
+
 	100% {
 		top: calc(220px - 5px);
 		transform: rotateY(-10deg);
@@ -132,10 +133,12 @@ body {
 		top: 25vh;
 		left: -110vh;
 	}
+
 	10% {
 		top: 25vh;
 		left: 110vh;
 	}
+
 	20% {
 		top: 25vh;
 		left: 110vh;
@@ -145,14 +148,17 @@ body {
 		top: -19vh;
 		left: -110vh;
 	}
+
 	30% {
 		top: -19vh;
 		left: -110vh;
 	}
+
 	40% {
 		top: -19vh;
 		left: 110vh;
 	}
+
 	50% {
 		top: -19vh;
 		left: 110vh;
@@ -162,14 +168,17 @@ body {
 		top: -28vh;
 		left: -110vh;
 	}
+
 	60% {
 		top: -28vh;
 		left: -110vh;
 	}
+
 	70% {
 		top: -28vh;
 		left: 110vh;
 	}
+
 	80% {
 		top: -28vh;
 		left: 110vh;
@@ -179,10 +188,12 @@ body {
 		top: 3vh;
 		left: -110vh;
 	}
+
 	90% {
 		top: 3vh;
 		left: -110vh;
 	}
+
 	100% {
 		top: 3vh;
 		left: 110vh;
